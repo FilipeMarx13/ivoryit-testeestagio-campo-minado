@@ -25,6 +25,7 @@ namespace Ivory.TesteEstagio.CampoMinado
                     linha = Console.ReadLine();
                     int.TryParse(linha, out linha1);
                 }
+                
                 Console.WriteLine("Escolha uma coluna de 1 a 9");
                 coluna = Console.ReadLine();                
                 int.TryParse(coluna, out coluna1);
@@ -42,9 +43,11 @@ namespace Ivory.TesteEstagio.CampoMinado
                         break;
                     case 2:
                         Console.WriteLine("Game Over");
+                        Console.WriteLine(campoMinado.Tabuleiro);
                         break;
                     case 1:
                         Console.WriteLine("Voce venceu o jogo");
+                        Console.WriteLine(campoMinado.Tabuleiro);
                         break;
                 }
 
@@ -53,6 +56,7 @@ namespace Ivory.TesteEstagio.CampoMinado
 
             }
             
+            Console.ReadLine(); 
 
             
         }   
